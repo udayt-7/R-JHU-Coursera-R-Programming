@@ -1,0 +1,8 @@
+library(XML)
+fileUrl <- "http://www.w3schools.com/xml/simple.xml"
+doc <- xmlTreeParse(fileUrl, useInternal = TRUE)
+
+rootNode<- xmlRoot(doc)
+xmlName(rootNode)
+
+names(rootNode)
